@@ -1,8 +1,26 @@
 aid: zymergen
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zymergen.png
 name: Zymergen
-description: Zymergen is a company surfaced as a portfolio company of dcvc, kindred-ventures, obvious-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Zymergen was a synthetic-biology and bio-manufacturing company founded in 2013 in Emeryville,
+  California, that used machine learning and automation to engineer microbes and discover novel
+  bio-based materials and molecules. It went public on NASDAQ in 2021 and was acquired by Ginkgo
+  Bioworks in October 2022; the zymergen.com domain now 301-redirects to Ginkgo Bioworks. It was
+  surfaced as a portfolio company of DCVC, Kindred Ventures, and Obvious Ventures and added to the
+  API Evangelist network for enrichment. Enrichment found no public developer portal, API,
+  documentation, or event surface — the company has no independent API footprint following the
+  acquisition. This profile is retained as a portfolio/history record.
 url: https://raw.githubusercontent.com/api-evangelist/zymergen/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +30,20 @@ x-backed-by:
 - obvious-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: ginkgo-bioworks
+x-acquired-date: '2022-10-19'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Synthetic Biology
+- Biotechnology
+- Bio-manufacturing
+- Materials Science
+- Machine Learning
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +51,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/zymergen-domain-security.yml
 - type: Website
   url: https://zymergen.com/
+- type: Acquisition
+  url: https://www.ginkgo.bio/2022/10/19/ginkgo-acquires-zymergen/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
